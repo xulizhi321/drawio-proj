@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2024-06-09T11:02:52.803Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="nCIavoC4FkUd7miBqR41" version="24.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-09T12:45:30.484Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="eqdCD6yO1e8f1ihyeJlb" version="24.5.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="3767" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4297" dy="1057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-243" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;lid=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-243" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;lid=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1120" y="2710" width="920" height="740" as="geometry" />
         </mxCell>
         <mxCell id="g372fgXqSMDqfa3k4_pN-215" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -164,7 +164,7 @@
         <mxCell id="g372fgXqSMDqfa3k4_pN-44" value="+ set_callback_url(self, view, adapter_class)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="g372fgXqSMDqfa3k4_pN-32" vertex="1">
           <mxGeometry y="180" width="860" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="g372fgXqSMDqfa3k4_pN-45" value="+ validate(self, attrs) &#xa;   # 1）拿到 access_token （如果没有，拿code 去换取）, 调用上面的 get_social_login 函数获取 login 实例&#xa;   # 2）调用 allauth util 包中的 complete_social_login 函数， 该函数会启动 allauth.socialaccount.internal.flows.login 流程&#xa;   # 3） 在启动的 flow 流程中，会调用 adapter 的 pre_social_login 钩子函数，发送 sociallogin 信号，并根据 sociallogin.state[&quot;process&quot; 的值来执行链接或重定向或者登录&#xa;]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="g372fgXqSMDqfa3k4_pN-32" vertex="1">
+        <mxCell id="g372fgXqSMDqfa3k4_pN-45" value="+ validate(self, attrs) &#xa;   # 1）拿到 access_token （如果没有，拿code 去换取）, 调用上面的 get_social_login 函数获取 login 实例&#xa;   # 2）调用 allauth util 包中的 complete_social_login 函数， 该函数会启动 allauth.socialaccount.internal.flows.login 流程&#xa;   # 3） 在启动的 flow 流程中，会调用 adapter 的 pre_social_login 钩子函数，发送 sociallogin 信号，并根据 sociallogin.state[&quot;process&quot; 的值来执行链接或重定向或者登录&#xa;]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontColor=#FF3333;" parent="g372fgXqSMDqfa3k4_pN-32" vertex="1">
           <mxGeometry y="206" width="860" height="74" as="geometry" />
         </mxCell>
         <mxCell id="g372fgXqSMDqfa3k4_pN-46" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g372fgXqSMDqfa3k4_pN-15" target="g372fgXqSMDqfa3k4_pN-32" edge="1">
@@ -403,7 +403,7 @@
         <mxCell id="g372fgXqSMDqfa3k4_pN-160" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="g372fgXqSMDqfa3k4_pN-159" vertex="1">
           <mxGeometry y="26" width="450" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="g372fgXqSMDqfa3k4_pN-163" value="+ dispatch(self, request, *args, **kwargs)&#xa;  # 1) 获取 adapter&#xa;  # 2）获取 provider、clent&#xa;  # 3）用 adapter 获取 token，调用 adapter.complete_login&#xa;  # 4） 最后调用 allauth.socialaccount.helpers .adapter.complete_social_login,&#xa;  # 5)    complete_social_login 其实就是调用 flows.login.complete_login" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="g372fgXqSMDqfa3k4_pN-159" vertex="1">
+        <mxCell id="g372fgXqSMDqfa3k4_pN-163" value="+ dispatch(self, request, *args, **kwargs)&#xa;  # 1) 获取 adapter&#xa;  # 2）获取 provider、clent&#xa;  # 3）用 adapter 获取 token，调用 adapter.complete_login&#xa;  # 4） 最后调用 allauth.socialaccount.helpers .adapter.complete_social_login,&#xa;  # 5)    complete_social_login 其实就是调用 flows.login.complete_login" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontColor=#FF0000;" parent="g372fgXqSMDqfa3k4_pN-159" vertex="1">
           <mxGeometry y="34" width="450" height="96" as="geometry" />
         </mxCell>
         <mxCell id="g372fgXqSMDqfa3k4_pN-161" value="+ _redirect_strict_samesite(self, request, provider):" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="g372fgXqSMDqfa3k4_pN-159" vertex="1">
@@ -523,578 +523,578 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-0" value="allauth.socialaccount.providers.base.Provider" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-0" value="allauth.socialaccount.providers.base.Provider" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="570" y="1342" width="420" height="748" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-1" value="+ name: str  # Provided by subclasses" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-1" value="+ name: str  # Provided by subclasses" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="26" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-2" value="+ id: str  # Provided by subclasses" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-2" value="+ id: str  # Provided by subclasses" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="52" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-3" value="+ slug: Optional[str] = None  # Provided by subclasses&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-3" value="+ slug: Optional[str] = None  # Provided by subclasses&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="78" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-4" value="+ uses_apps = True" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-4" value="+ uses_apps = True" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="104" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-5" value="+ supports_redirect = False" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-5" value="+ supports_redirect = False" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="130" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-6" value="+ supports_token_authentication = False" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-6" value="+ supports_token_authentication = False" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="156" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-34" value="+ sub_id # (self.app.provider_id or self.app.provider) if self.uses_apps else self.id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-34" value="+ sub_id # (self.app.provider_id or self.app.provider) if self.uses_apps else self.id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="182" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-12" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-12" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="208" width="420" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-13" value="+ __init__(self, request, app=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-13" value="+ __init__(self, request, app=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="216" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-14" value="+ __str__(self) # return self.name" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-14" value="+ __str__(self) # return self.name" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="242" width="420" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-15" value="+ get_slug(cls)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-15" value="+ get_slug(cls)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="266" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-16" value="+ get_login_url(self, request, next=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=6" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-16" value="+ get_login_url(self, request, next=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=6" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="292" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-17" value="+ redirect_from_request(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-17" value="+ redirect_from_request(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="318" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-18" value="+ get_redirect_from_request_kwargs(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-18" value="+ get_redirect_from_request_kwargs(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="344" width="420" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-19" value="+ redirect(self, request, process, next_url=None, data=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=6" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-19" value="+ redirect(self, request, process, next_url=None, data=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=6" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="366" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-21" value="+ verify_token(self, request, token)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=6" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-21" value="+ verify_token(self, request, token)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=6" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="392" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-22" value="+ media_js(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-22" value="+ media_js(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="418" width="420" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-23" value="+ wrap_account(self, social_account)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-23" value="+ wrap_account(self, social_account)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="440" width="420" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-24" value="+ get_settings(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-24" value="+ get_settings(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="462" width="420" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-25" value="+ sociallogin_from_response(self, request, response)&#xa;   # 登录请求 + 获取到的社交网站用户信息， 用于生成 social_login 实例&#xa;   # 注意，这里不涉及任何数据库保存操作，可以理解成只是预演" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-25" value="+ sociallogin_from_response(self, request, response)&#xa;   # 登录请求 + 获取到的社交网站用户信息， 用于生成 social_login 实例&#xa;   # 注意，这里不涉及任何数据库保存操作，可以理解成只是预演" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="484" width="420" height="56" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-26" value="+ extract_uid(self, data) # 从用户信息生产用户唯一ID" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=6" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-26" value="+ extract_uid(self, data) # 从用户信息生产用户唯一ID" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=6" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="540" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-27" value="+ extract_extra_data(self, data) # 提取要放到数据库 socialAccount 的 extra_data 字段的内容" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-27" value="+ extract_extra_data(self, data) # 提取要放到数据库 socialAccount 的 extra_data 字段的内容" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="566" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-28" value="+ extract_common_fields(self, data) # 提取信息给 Adapter 在 populate_user() 函数中使用，如 first_name 等" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-28" value="+ extract_common_fields(self, data) # 提取信息给 Adapter 在 populate_user() 函数中使用，如 first_name 等" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="592" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-29" value="+ cleanup_email_addresses(self, email, addresses, email_verified=False)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-29" value="+ cleanup_email_addresses(self, email, addresses, email_verified=False)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="618" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-31" value="+ extract_email_addresses(self, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-31" value="+ extract_email_addresses(self, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="644" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-30" value="+ get_package(cls)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-30" value="+ get_package(cls)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="670" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-32" value="+ stash_redirect_state(self, request, process, next_url=None, data=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-32" value="+ stash_redirect_state(self, request, process, next_url=None, data=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="696" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-33" value="+ unstash_redirect_state(self, request, state_id)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-33" value="+ unstash_redirect_state(self, request, state_id)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;" parent="8jCcrjkgQkqPTFyG1G2x-0" vertex="1">
           <mxGeometry y="722" width="420" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g372fgXqSMDqfa3k4_pN-64" target="8jCcrjkgQkqPTFyG1G2x-0">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g372fgXqSMDqfa3k4_pN-64" target="8jCcrjkgQkqPTFyG1G2x-0" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="52" y="1100" as="sourcePoint" />
             <mxPoint x="120" y="1035" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-35" value="allauth.socialaccount.adapter.DefaultSocialAccountAdapter(BaseAdapter)&#xa;# 这个类很多功能都使用  get_account_adapter() 得到的实例来辅助完成&#xa;#  get_account_adapter() 通过配置得到的实例，默认是 DefaultAccountAdapter类或其子类" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-35" value="allauth.socialaccount.adapter.DefaultSocialAccountAdapter(BaseAdapter)&#xa;# 这个类很多功能都使用  get_account_adapter() 得到的实例来辅助完成&#xa;#  get_account_adapter() 通过配置得到的实例，默认是 DefaultAccountAdapter类或其子类" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-1150" y="680" width="550" height="694" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-36" value="+ error_messages " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-36" value="+ error_messages " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="60" width="550" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-47" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-47" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="86" width="550" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-48" value="+ pre_social_login(self, request, sociallogin) # 钩子函数，在获得用户授权后，执行login函数前执行" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-48" value="+ pre_social_login(self, request, sociallogin) # 钩子函数，在获得用户授权后，执行login函数前执行" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="94" width="550" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-49" value="+ on_authentication_error(self,request,provider,error=None,exception=None,extra_context=None,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-49" value="+ on_authentication_error(self,request,provider,error=None,exception=None,extra_context=None,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="120" width="550" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-50" value="+ new_user(self, request, sociallogin)        # 使用  account_adapter 实例来辅助完成" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=2" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-50" value="+ new_user(self, request, sociallogin)        # 使用  account_adapter 实例来辅助完成" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=2" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="144" width="550" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-51" value="+ save_user(self, request, sociallogin, form=None) # 使用  account_adapter 实例来辅助完成" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-51" value="+ save_user(self, request, sociallogin, form=None) # 使用  account_adapter 实例来辅助完成" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="170" width="550" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-56" value="+ populate_user(self, request, sociallogin, data) # 可以用于进一步填充用户实例的钩子。如填充first_name等信息，这些字段不会校验，不负责" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-56" value="+ populate_user(self, request, sociallogin, data) # 可以用于进一步填充用户实例的钩子。如填充first_name等信息，这些字段不会校验，不负责" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="196" width="550" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-52" value="+ parse_token(self, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-52" value="+ parse_token(self, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="222" width="550" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-57" value="+ get_connect_redirect_url(self, request, socialaccount)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-57" value="+ get_connect_redirect_url(self, request, socialaccount)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="248" width="550" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-53" value="+ is_auto_signup_allowed(self, request, sociallogin)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-53" value="+ is_auto_signup_allowed(self, request, sociallogin)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="274" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-58" value="+ is_open_for_signup(self, request, sociallogin)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-58" value="+ is_open_for_signup(self, request, sociallogin)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="304" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-59" value="+ get_signup_form_initial_data(self, sociallogin)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-59" value="+ get_signup_form_initial_data(self, sociallogin)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="334" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-60" value="+ deserialize_instance(self, model, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-60" value="+ deserialize_instance(self, model, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="364" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-61" value="+ serialize_instance(self, instance)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-61" value="+ serialize_instance(self, instance)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="394" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-62" value="+ list_providers(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-62" value="+ list_providers(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="424" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-63" value="+ get_provider(self, request, provider, client_id=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-63" value="+ get_provider(self, request, provider, client_id=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="454" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-64" value="+ list_apps(self, request, provider=None, client_id=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-64" value="+ list_apps(self, request, provider=None, client_id=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="484" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-65" value="+ get_app(self, request, provider, client_id=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-65" value="+ get_app(self, request, provider, client_id=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="514" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-66" value="+ send_notification_mail(self, *args, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-66" value="+ send_notification_mail(self, *args, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="544" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-67" value="+ get_requests_session(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-67" value="+ get_requests_session(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="574" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-68" value="+ is_email_verified(self, provider, email) # 校验邮箱地址后缀名是否在配置支持的后缀名中" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-68" value="+ is_email_verified(self, provider, email) # 校验邮箱地址后缀名是否在配置支持的后缀名中" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="604" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-69" value="+ can_authenticate_by_email(self, login, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-69" value="+ can_authenticate_by_email(self, login, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="634" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-70" value="+ generate_state_param(self, state: dict) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-70" value="+ generate_state_param(self, state: dict) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-35" vertex="1">
           <mxGeometry y="664" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-55" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g372fgXqSMDqfa3k4_pN-90" target="8jCcrjkgQkqPTFyG1G2x-35">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-55" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g372fgXqSMDqfa3k4_pN-90" target="8jCcrjkgQkqPTFyG1G2x-35" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-641" y="2540" as="sourcePoint" />
             <mxPoint x="-670" y="2036" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-71" value="allauth.account.adapter.DefaultAccountAdapter(BaseAdapter)&#xa;# 这个类很多功能都使用  get_account_adapter() 得到的实例来辅助完成&#xa;#  get_account_adapter() 通过配置得到的实例，默认是 DefaultAccountAdapter类或其子类" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-71" value="allauth.account.adapter.DefaultAccountAdapter(BaseAdapter)&#xa;# 这个类很多功能都使用  get_account_adapter() 得到的实例来辅助完成&#xa;#  get_account_adapter() 通过配置得到的实例，默认是 DefaultAccountAdapter类或其子类" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-1840" y="90" width="490" height="1590" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-72" value="+ error_messages " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-72" value="+ error_messages " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="60" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-73" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-73" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="86" width="490" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-74" value="+ stash_verified_email(self, request, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-74" value="+ stash_verified_email(self, request, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="94" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-75" value="+ unstash_verified_email(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-75" value="+ unstash_verified_email(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="120" width="490" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-76" value="+ stash_user(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-76" value="+ stash_user(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="144" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-77" value="+ unstash_user(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-77" value="+ unstash_user(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="170" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-97" value="+ is_email_verified(self, request, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-97" value="+ is_email_verified(self, request, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="196" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-98" value="+ can_delete_email(self, email_address)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-98" value="+ can_delete_email(self, email_address)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="222" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-99" value="+ format_email_subject(self, subject)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-99" value="+ format_email_subject(self, subject)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="248" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-100" value="+ get_from_email(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-100" value="+ get_from_email(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="274" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-101" value="+ render_mail(self, template_prefix, email, context, headers=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-101" value="+ render_mail(self, template_prefix, email, context, headers=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="300" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-102" value="+ send_mail(self, template_prefix, email, context)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-102" value="+ send_mail(self, template_prefix, email, context)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="326" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-103" value="+ get_signup_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-103" value="+ get_signup_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="352" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-104" value="+ get_login_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-104" value="+ get_login_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="378" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-105" value="+ get_logout_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-105" value="+ get_logout_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="404" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-106" value="+ get_email_verification_redirect_url(self, email_address)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-106" value="+ get_email_verification_redirect_url(self, email_address)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="430" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-107" value="+ get_password_change_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-107" value="+ get_password_change_redirect_url(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="456" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-108" value="+ is_open_for_signup(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-108" value="+ is_open_for_signup(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="482" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-109" value="+ new_user(self, request)  # 这里回的是一个空user，后面再用 populate_user 函数来补全信息" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-109" value="+ new_user(self, request)  # 这里回的是一个空user，后面再用 populate_user 函数来补全信息" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="508" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-110" value="+ populate_username(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-110" value="+ populate_username(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="534" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-112" value="+ generate_unique_username(self, txts, regex=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-112" value="+ generate_unique_username(self, txts, regex=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="560" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-111" value="+ save_user(self, request, user, form, commit=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-111" value="+ save_user(self, request, user, form, commit=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="586" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-113" value="+ clean_username(self, username, shallow=False)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-113" value="+ clean_username(self, username, shallow=False)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="612" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-114" value="+ clean_email(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-114" value="+ clean_email(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="638" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-115" value="+ clean_password(self, password, user=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-115" value="+ clean_password(self, password, user=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="664" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-117" value="+ validate_unique_email(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-117" value="+ validate_unique_email(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="690" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-118" value="+ add_message(self,request,level,message_template=None,message_context=None,extra_tags=&quot;&quot;,message=None,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-118" value="+ add_message(self,request,level,message_template=None,message_context=None,extra_tags=&quot;&quot;,message=None,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="716" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-119" value="+ ajax_response(self, request, response, redirect_to=None, form=None, data=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-119" value="+ ajax_response(self, request, response, redirect_to=None, form=None, data=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="742" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-120" value="+ ajax_response_form(self, form)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-120" value="+ ajax_response_form(self, form)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="768" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-121" value="+ pre_login(self,request,user,*,email_verification,signal_kwargs,email,signup,redirect_url)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-121" value="+ pre_login(self,request,user,*,email_verification,signal_kwargs,email,signup,redirect_url)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="794" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-122" value="+ post_login(self,request,user,*,email_verification,signal_kwargs,email,signup,redirect_url)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-122" value="+ post_login(self,request,user,*,email_verification,signal_kwargs,email,signup,redirect_url)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="820" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-123" value="+ login(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-123" value="+ login(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="846" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-124" value="+ logout(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-124" value="+ logout(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="872" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-125" value="+ confirm_email(self, request, email_address)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-125" value="+ confirm_email(self, request, email_address)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="898" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-126" value="+ set_password(self, user, password)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-126" value="+ set_password(self, user, password)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="924" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-127" value="+ get_user_search_fields(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-127" value="+ get_user_search_fields(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="950" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-128" value="+ is_safe_url(self, url)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-128" value="+ is_safe_url(self, url)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="976" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-129" value="+ get_reset_password_from_key_url(self, key)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-129" value="+ get_reset_password_from_key_url(self, key)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1002" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-130" value="+ get_email_confirmation_url(self, request, emailconfirmation)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-130" value="+ get_email_confirmation_url(self, request, emailconfirmation)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1028" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-131" value="+ should_send_confirmation_mail(self, request, email_address, signup)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-131" value="+ should_send_confirmation_mail(self, request, email_address, signup)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1054" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-132" value="+ should_send_confirmation_mail(self, request, email_address, signup)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-132" value="+ should_send_confirmation_mail(self, request, email_address, signup)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1080" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-133" value="+ send_account_already_exists_mail(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-133" value="+ send_account_already_exists_mail(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1106" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-134" value="+ send_confirmation_mail(self, request, emailconfirmation, signup)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-134" value="+ send_confirmation_mail(self, request, emailconfirmation, signup)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1132" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-135" value="+ respond_user_inactive(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-135" value="+ respond_user_inactive(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1158" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-136" value="+ respond_email_verification_sent(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-136" value="+ respond_email_verification_sent(self, request, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1184" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-137" value="+ _get_login_attempts_cache_key(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-137" value="+ _get_login_attempts_cache_key(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1210" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-138" value="+ _delete_login_attempts_cached_email(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-138" value="+ _delete_login_attempts_cached_email(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1236" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-139" value="+ pre_authenticate(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-139" value="+ pre_authenticate(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1262" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-140" value="+ authenticate(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-140" value="+ authenticate(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1288" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-141" value="+ authentication_failed(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-141" value="+ authentication_failed(self, request, **credentials)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1314" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-142" value="+ reauthenticate(self, user, password)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-142" value="+ reauthenticate(self, user, password)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1340" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-143" value="+ is_ajax(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-143" value="+ is_ajax(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1366" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-144" value="+ get_client_ip(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-144" value="+ get_client_ip(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1392" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-145" value="+ get_http_user_agent(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-145" value="+ get_http_user_agent(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1418" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-146" value="+ generate_emailconfirmation_key(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-146" value="+ generate_emailconfirmation_key(self, email)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1444" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-147" value="+ get_login_stages(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-147" value="+ get_login_stages(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1470" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-148" value="+ get_reauthentication_methods(self, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-148" value="+ get_reauthentication_methods(self, user)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1496" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-149" value="+ send_notification_mail(self, template_prefix, user, context=None, email=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-149" value="+ send_notification_mail(self, template_prefix, user, context=None, email=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1522" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-150" value="+ generate_login_code(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-150" value="+ generate_login_code(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-71" vertex="1">
           <mxGeometry y="1548" width="490" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-95" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-35" target="8jCcrjkgQkqPTFyG1G2x-71">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-95" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-35" target="8jCcrjkgQkqPTFyG1G2x-71" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-1160" y="650" as="sourcePoint" />
             <mxPoint x="-1000" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-151" value="SocialApp(models.Model)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-151" value="SocialApp(models.Model)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1150" y="2990" width="350" height="358" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-152" value="+ objects = SocialAppManager()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-152" value="+ objects = SocialAppManager()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="26" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-153" value="+ provider = models.CharField(verbose_name=_(&quot;provider&quot;),max_length=30,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-153" value="+ provider = models.CharField(verbose_name=_(&quot;provider&quot;),max_length=30,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="52" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-166" value="+ provider_id = models.CharField(verbose_name=_(&quot;provider ID&quot;),max_length=200,blank=True,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-166" value="+ provider_id = models.CharField(verbose_name=_(&quot;provider ID&quot;),max_length=200,blank=True,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="78" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-167" value="+ name = models.CharField(verbose_name=_(&quot;name&quot;), max_length=40)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-167" value="+ name = models.CharField(verbose_name=_(&quot;name&quot;), max_length=40)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="104" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-168" value="+ client_id = models.CharField(verbose_name=_(&quot;client id&quot;),max_length=191,help_text=_(&quot;App ID, or consumer key&quot;),)&#xa;    # 第三方应用申请的那个 APPID" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-168" value="+ client_id = models.CharField(verbose_name=_(&quot;client id&quot;),max_length=191,help_text=_(&quot;App ID, or consumer key&quot;),)&#xa;    # 第三方应用申请的那个 APPID" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="130" width="350" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-169" value="+ secret = models.CharField(verbose_name=_(&quot;secret key&quot;),max_length=191,blank=True,help_text=_(&quot;API secret, client secret, or consumer secret&quot;),)&#xa;   # 第三方应用申请的那个密钥" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-169" value="+ secret = models.CharField(verbose_name=_(&quot;secret key&quot;),max_length=191,blank=True,help_text=_(&quot;API secret, client secret, or consumer secret&quot;),)&#xa;   # 第三方应用申请的那个密钥" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="170" width="350" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-170" value="+ key = models.CharField(verbose_name=_(&quot;key&quot;), max_length=191, blank=True, help_text=_(&quot;Key&quot;))" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-170" value="+ key = models.CharField(verbose_name=_(&quot;key&quot;), max_length=191, blank=True, help_text=_(&quot;Key&quot;))" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="210" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-171" value="+ settings = models.JSONField(default=dict, blank=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-171" value="+ settings = models.JSONField(default=dict, blank=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="236" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-172" value="+ sites = models.ManyToManyField(&quot;sites.Site&quot;, blank=True) &#xa;  # allauth.app_settings.SITES_ENABLED 被设置的时候才有这个属性 " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-172" value="+ sites = models.ManyToManyField(&quot;sites.Site&quot;, blank=True) &#xa;  # allauth.app_settings.SITES_ENABLED 被设置的时候才有这个属性 " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="262" width="350" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-155" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-155" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="298" width="350" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-174" value="+ __str__(self)  # return self.name" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-174" value="+ __str__(self)  # return self.name" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="306" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-156" value="+ get_provider(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-156" value="+ get_provider(self, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-151" vertex="1">
           <mxGeometry y="332" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-175" value="SocialAccount(models.Model)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-175" value="SocialAccount(models.Model)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1550" y="2990" width="430" height="364" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-176" value="+ user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-176" value="+ user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="26" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-177" value="+ provider = models.CharField(verbose_name=_(&quot;provider&quot;),max_length=200,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-177" value="+ provider = models.CharField(verbose_name=_(&quot;provider&quot;),max_length=200,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="52" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-178" value="+ uid = models.CharField(verbose_name=_(&quot;uid&quot;), max_length=app_settings.UID_MAX_LENGTH)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-178" value="+ uid = models.CharField(verbose_name=_(&quot;uid&quot;), max_length=app_settings.UID_MAX_LENGTH)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="78" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-179" value="+ last_login = models.DateTimeField(verbose_name=_(&quot;last login&quot;), auto_now=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-179" value="+ last_login = models.DateTimeField(verbose_name=_(&quot;last login&quot;), auto_now=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="104" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-188" value="+ date_joined = models.DateTimeField(verbose_name=_(&quot;date joined&quot;), auto_now_add=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-188" value="+ date_joined = models.DateTimeField(verbose_name=_(&quot;date joined&quot;), auto_now_add=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="130" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-189" value="+ extra_data = models.JSONField(verbose_name=_(&quot;extra data&quot;), default=dict) &#xa;   # 如从第三方网站拿到的一些个人信息： 用户名、头像等" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-189" value="+ extra_data = models.JSONField(verbose_name=_(&quot;extra data&quot;), default=dict) &#xa;   # 如从第三方网站拿到的一些个人信息： 用户名、头像等" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="156" width="430" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-185" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-185" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="200" width="430" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-187" value="+ authenticate(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-187" value="+ authenticate(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="208" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-186" value="+ __str__(self)  # return socialaccount_user_display(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-186" value="+ __str__(self)  # return socialaccount_user_display(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="234" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-190" value="+ get_profile_url(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-190" value="+ get_profile_url(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="260" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-191" value="+ get_avatar_url(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-191" value="+ get_avatar_url(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="286" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-192" value="+ get_provider(self, request=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-192" value="+ get_provider(self, request=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="312" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-193" value="+ get_provider_account(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-193" value="+ get_provider_account(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-175" vertex="1">
           <mxGeometry y="338" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-194" value="SocialToken(models.Model)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-194" value="SocialToken(models.Model)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1340" y="2770" width="430" height="170" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-195" value="+ app = models.ForeignKey(SocialApp, on_delete=models.SET_NULL, blank=True, null=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-194">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-195" value="+ app = models.ForeignKey(SocialApp, on_delete=models.SET_NULL, blank=True, null=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-194" vertex="1">
           <mxGeometry y="26" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-196" value="+ account = models.ForeignKey(SocialAccount, on_delete=models.CASCADE)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-194">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-196" value="+ account = models.ForeignKey(SocialAccount, on_delete=models.CASCADE)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-194" vertex="1">
           <mxGeometry y="52" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-198" value="+ token = models.TextField(verbose_name=_(&quot;token&quot;),help_text=_(&#39;&quot;oauth_token&quot; (OAuth1) or access token (OAuth2)&#39;),)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-194">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-198" value="+ token = models.TextField(verbose_name=_(&quot;token&quot;),help_text=_(&#39;&quot;oauth_token&quot; (OAuth1) or access token (OAuth2)&#39;),)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="8jCcrjkgQkqPTFyG1G2x-194" vertex="1">
           <mxGeometry y="78" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-199" value="+ token_secret = models.TextField(blank=True,verbose_name=_(&quot;token secret&quot;),help_text=_(&#39;&quot;oauth_token_secret&quot; (OAuth1) or refresh token (OAuth2)&#39;),)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-194">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-199" value="+ token_secret = models.TextField(blank=True,verbose_name=_(&quot;token secret&quot;),help_text=_(&#39;&quot;oauth_token_secret&quot; (OAuth1) or refresh token (OAuth2)&#39;),)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-194" vertex="1">
           <mxGeometry y="104" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-201" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-194">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-201" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-194" vertex="1">
           <mxGeometry y="130" width="430" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-203" value="+ __str__(self)  # return self.token" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-194">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-203" value="+ __str__(self)  # return self.token" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-194" vertex="1">
           <mxGeometry y="138" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-209" value="1：1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-194" target="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-209" value="1：1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-194" target="8jCcrjkgQkqPTFyG1G2x-175" edge="1">
           <mxGeometry x="0.3624" y="7" relative="1" as="geometry">
             <mxPoint x="1670" y="2970" as="sourcePoint" />
             <mxPoint x="1830" y="2970" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-210" value="1：1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-194" target="8jCcrjkgQkqPTFyG1G2x-151">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-210" value="1：1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-194" target="8jCcrjkgQkqPTFyG1G2x-151" edge="1">
           <mxGeometry x="0.3624" y="7" relative="1" as="geometry">
             <mxPoint x="1621" y="2950" as="sourcePoint" />
             <mxPoint x="1654" y="3000" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-211" value="SocialLogin(object)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-211" value="SocialLogin(object)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1390" y="1770" width="410" height="750" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-212" value="+ token" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-212" value="+ token" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="26" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-213" value="+ user" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-213" value="+ user" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="52" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-214" value="+ account" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-214" value="+ account" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="78" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-215" value="+ email_addresses ： Array&lt;string&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-215" value="+ email_addresses ： Array&lt;string&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="104" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-224" value="+ state = {}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-224" value="+ state = {}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="130" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-225" value="+ is_headless：boolean # return bool(self.state.get(&quot;headless&quot;))" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-225" value="+ is_headless：boolean # return bool(self.state.get(&quot;headless&quot;))" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="156" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-229" value="+ is_existing(self) # False 表示这个account、user 还是临时的，还没有写入数据库" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-229" value="+ is_existing(self) # False 表示这个account、user 还是临时的，还没有写入数据库" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="182" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-231" value="+ _did_authenticate_by_email # 如果通过社交用户信息里的email信息能关联到user，设置这个为true" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-231" value="+ _did_authenticate_by_email # 如果通过社交用户信息里的email信息能关联到user，设置这个为true" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="208" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-221" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-221" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="234" width="410" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-222" value="+ __init__(self, user=None, account=None, token=None, email_addresses=[])" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-222" value="+ __init__(self, user=None, account=None, token=None, email_addresses=[])" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="242" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-223" value="+ connect(self, request, user)&#xa;   # 作用应该是把这个帐号和某个 user 关联起来&#xa;   # 1） 调用self.save()  2) 发送  social_account_added 信号 3）发送通知邮件&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-223" value="+ connect(self, request, user)&#xa;   # 作用应该是把这个帐号和某个 user 关联起来&#xa;   # 1） 调用self.save()  2) 发送  social_account_added 信号 3）发送通知邮件&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="268" width="410" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-226" value="+ serialize(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-226" value="+ serialize(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="320" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-227" value="+ deserialize(cls, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-227" value="+ deserialize(cls, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="346" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-228" value="+ save(self, request, connect=False) &#xa;   # 1） 在数据库创建 user 记录&#xa;   # 2） 把 account 记录和 user 记录关联，在数据库创建 account 记录&#xa;   # 3） 如果设置了要保存 token， 在数据库创建 token 记录&#xa;   # 4） 如果 connect = True，pass ; 否则，调用 utils.setup_user_email(request, user, addresses) 在数据库创建邮箱地址记录并关联user&#xa;&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-228" value="+ save(self, request, connect=False) &#xa;   # 1） 在数据库创建 user 记录&#xa;   # 2） 把 account 记录和 user 记录关联，在数据库创建 account 记录&#xa;   # 3） 如果设置了要保存 token， 在数据库创建 token 记录&#xa;   # 4） 如果 connect = True，pass ; 否则，调用 utils.setup_user_email(request, user, addresses) 在数据库创建邮箱地址记录并关联user&#xa;&#xa;&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="372" width="410" height="82" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-230" value="+ lookup(self) # 通过accout表或email地址表查找是否已经有关联上的用户" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-230" value="+ lookup(self) # 通过accout表或email地址表查找是否已经有关联上的用户" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#d5e8d4;strokeColor=#82b366;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="454" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-232" value="+ _lookup_by_socialaccount(self)&#xa;  # 通过这个account里面的uid信息在数据库查找，若找到，更新这条记录&#xa;# 并将记录的user设置为这个account实例的user" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-232" value="+ _lookup_by_socialaccount(self)&#xa;  # 通过这个account里面的uid信息在数据库查找，若找到，更新这条记录&#xa;# 并将记录的user设置为这个account实例的user" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="480" width="410" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-233" value="+ _store_token(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-233" value="+ _store_token(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="530" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-234" value="+ _lookup_by_email(self)&#xa;  # 通过这个account里面的email信息在数据库查找&#xa;# 若找到，并将记录的user设置为这个account实例的user&#xa;# 设置 _did_authenticate_by_email = True" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-234" value="+ _lookup_by_email(self)&#xa;  # 通过这个account里面的email信息在数据库查找&#xa;# 若找到，并将记录的user设置为这个account实例的user&#xa;# 设置 _did_authenticate_by_email = True" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="556" width="410" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-235" value="+ _accept_login(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-235" value="+ _accept_login(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="620" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-236" value="+ get_redirect_url(self, request) # 取 state 的 next 字段" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-236" value="+ get_redirect_url(self, request) # 取 state 的 next 字段" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="646" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-237" value="+ stash_state(cls, request, state=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-237" value="+ stash_state(cls, request, state=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="672" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-238" value="+ unstash_state(cls, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-238" value="+ unstash_state(cls, request)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="698" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-239" value="+ verify_and_unstash_state(cls, request, verifier)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-239" value="+ verify_and_unstash_state(cls, request, verifier)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8jCcrjkgQkqPTFyG1G2x-211" vertex="1">
           <mxGeometry y="724" width="410" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-240" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-211" target="8jCcrjkgQkqPTFyG1G2x-194">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-240" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-211" target="8jCcrjkgQkqPTFyG1G2x-194" edge="1">
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="2030" y="2952.7941176470586" as="sourcePoint" />
             <mxPoint x="1970" y="2810" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-241" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-211" target="8jCcrjkgQkqPTFyG1G2x-175">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-241" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;align=left;verticalAlign=bottom;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-211" target="8jCcrjkgQkqPTFyG1G2x-175" edge="1">
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="2030" y="3072.202127659574" as="sourcePoint" />
             <mxPoint x="1780" y="2909" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8jCcrjkgQkqPTFyG1G2x-242" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-25" target="8jCcrjkgQkqPTFyG1G2x-211">
+        <mxCell id="8jCcrjkgQkqPTFyG1G2x-242" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8jCcrjkgQkqPTFyG1G2x-25" target="8jCcrjkgQkqPTFyG1G2x-211" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="60" y="570" as="sourcePoint" />
             <mxPoint x="-1800" y="-493.8095238095238" as="targetPoint" />
