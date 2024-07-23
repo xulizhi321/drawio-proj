@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-23T04:21:10.265Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Niwrn6CZPWvn_n_ZMM4k" version="24.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-23T04:25:12.926Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="qSDKTQlL909oqFvAUPgp" version="24.5.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1646" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -252,7 +252,7 @@
           <mxGeometry y="498" width="300" height="20" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-58" value="dvc_objects.fs.base.ObjectFileSystem&#xa;# 主要在基类的上禁用了mkdir 操作，重写了 find 操作" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="680" y="1470" width="350" height="115" as="geometry">
+          <mxGeometry x="250" y="1500" width="350" height="115" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -272,6 +272,38 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="200" y="1550" as="sourcePoint" />
             <mxPoint x="220" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-84" value="dvc_objects.fs.MemoryFileSystem&#xa;# 主要在基类的上禁用了mkdir 操作，重写了 find 操作" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="630" y="1500" width="350" height="163" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-85" value="+ protocol = &quot;memory&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-84">
+          <mxGeometry y="35" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-89" value="+ PARAM_CHECKSUM = &quot;md5&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-84">
+          <mxGeometry y="55" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-91" value="+ __hash__ = FileSystem.__hash__" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-84">
+          <mxGeometry y="75" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-86" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-84">
+          <mxGeometry y="95" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-87" value="+ __init__(self, global_store=True, fs=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-84">
+          <mxGeometry y="103" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-88" value="+ __eq__(self, other)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-84">
+          <mxGeometry y="123" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-90" value="+ __eq__(self, other)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-84">
+          <mxGeometry y="143" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-92" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="lnwAOaTVToFOJ4RAvE19-84" target="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="456" y="1510" as="sourcePoint" />
+            <mxPoint x="479" y="1448" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
