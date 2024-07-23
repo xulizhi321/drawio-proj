@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-23T06:09:24.780Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="oh1s8P1c81hQPqlC4kt7" version="24.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-23T07:09:34.836Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="L1cNT9vD9aidDQVZnh10" version="24.5.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1646" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -175,14 +175,14 @@
           <mxGeometry y="50" width="170" height="8" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-33" value="dvc_objects.fs.base.FileSystem&#xa;# 基本就是一个代理类&#xa;# 主要的功能都转给 flavour 和 fs 成员变量去处理了" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="414" y="920" width="300" height="518" as="geometry">
+          <mxGeometry x="1020" y="30" width="300" height="2446" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-34" value="+ sep = &quot;/&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
           <mxGeometry y="50" width="300" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="lnwAOaTVToFOJ4RAvE19-36" value="+ flavour = posixpath  # 路径的工具库" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-36" value="+ flavour = posixpath  # 路径的工具库" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
           <mxGeometry y="70" width="300" height="20" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-37" value="+ protocol = &quot;base&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
@@ -248,8 +248,269 @@
         <mxCell id="lnwAOaTVToFOJ4RAvE19-56" value="+ chdir(self, path: str)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
           <mxGeometry y="478" width="300" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="lnwAOaTVToFOJ4RAvE19-57" value="+ chdir(self, path: str)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
-          <mxGeometry y="498" width="300" height="20" as="geometry" />
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-57" value="+ join(cls, *parts: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="498" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-93" value="+ split(cls, path: str) -&gt; tuple[str, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="520" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-94" value="+ splitext(cls, path: str) -&gt; tuple[str, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="542" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-95" value="+ normpath(self, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="564" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-96" value="+ isabs(cls, path: str) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="586" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-97" value="+ abspath(self, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="608" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-98" value="+ commonprefix(cls, paths: Sequence[str]) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="630" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-99" value="+ commonpath(cls, paths: Iterable[str]) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="652" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-100" value="+ parts(cls, path: str) -&gt; tuple[str, ...]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="674" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-101" value="+ parent(cls, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="696" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-102" value="+ dirname(cls, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="718" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-103" value="+ parents(cls, path: str) -&gt; Iterator[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="740" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-104" value="+ name(cls, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="762" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-106" value="+ suffix(cls, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="784" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-107" value="+ with_name(cls, path: str, name: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="806" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-108" value="+ with_suffix(cls, path: str, suffix: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="828" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-109" value="+ isin(cls, left: str, right: str) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="850" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-110" value="+ isin_or_eq(cls, left: str, right: str) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="872" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-111" value="+ overlaps(cls, left: str, right: str) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="894" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-112" value="+ relpath(self, path: str, start: Optional[str] = None) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="916" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-113" value="+ relparts(self, path: str, start: Optional[str] = None) -&gt; tuple[str, ...]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="938" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-114" value="+ as_posix(cls, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="960" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-115" value="+ _strip_protocol(cls, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="982" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-116" value="+ unstrip_protocol(self, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1004" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-118" value="+ fs(self) -&gt; &quot;AbstractFileSystem&quot; &#xa;# raise NotImplementedError" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1026" width="300" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-119" value="+ version_aware(self) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1060" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-120" value="+ _get_kwargs_from_urls(urlpath: str) -&gt; &quot;dict[str, Any]&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1082" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-121" value="+ _prepare_credentials(self, **config: dict[str, Any],) -&gt; dict[str, Any]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1104" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-122" value="+ get_missing_deps(cls) -&gt; list[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1126" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-123" value="+ _check_requires(self, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1148" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-124" value="+ isdir(self, path: AnyFSPath) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1170" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-125" value="+ isfile(self, path: AnyFSPath) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1192" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-126" value="+ is_empty(self, path: AnyFSPath) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1214" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-127" value="+ open(self,path: AnyFSPath,mode: Literal[&quot;rb&quot;, &quot;br&quot;, &quot;wb&quot;],**kwargs: Any,) -&gt; &quot;BinaryIO&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1236" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-128" value="+ open(self, path: AnyFSPath, mode: Literal[&quot;r&quot;, &quot;rt&quot;, &quot;w&quot;] = &quot;r&quot;, **kwargs: Any,) -&gt; &quot;TextIO&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1258" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-129" value="+ open(self, path: AnyFSPath, mode: str = &quot;r&quot;, **kwargs: Any,) -&gt; &quot;IO[Any]&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1280" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-130" value="+ read_block(self, path: AnyFSPath, offset: int, length: int, delimiter: Optional[bytes] = None,) -&gt; bytes" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1302" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-131" value="+ cat(self, path: Union[AnyFSPath, list[AnyFSPath]], recursive: bool = False, on_error: Literal[&quot;raise&quot;, &quot;omit&quot;, &quot;return&quot;] = &quot;raise&quot;, **kwargs: Any, ) -&gt; Union[bytes, dict[AnyFSPath, bytes]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1324" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-132" value="+ cat_ranges(self,paths: list[AnyFSPath],starts: list[int],ends: list[int],max_gap: Optional[int] = None,**kwargs,) -&gt; list[bytes]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1346" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-133" value="+ cat_ranges(self,paths: list[AnyFSPath],starts: list[int],ends: list[int],max_gap: Optional[int] = None,**kwargs,) -&gt; list[bytes]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1368" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-134" value="+ cat_file(self, path: AnyFSPath, start: Optional[int] = None, end: Optional[int] = None, **kwargs: Any,) -&gt; bytes" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1390" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-135" value="+ head(self, path: AnyFSPath, size: int = 1024) -&gt; bytes" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1412" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-136" value="+ tail(self, path: AnyFSPath, size: int = 1024) -&gt; bytes" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1434" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-137" value="+ pipe_file(self, path: AnyFSPath, value: bytes, **kwargs: Any) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1456" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-138" value="+ read_text(self, path: AnyFSPath, encoding: Optional[str] = None, errors: Optional[str] = None, newline: Optional[str] = None, **kwargs: Any,) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1478" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-139" value="+ write_text(self, path: AnyFSPath, value: str, encoding: Optional[str] = None, errors: Optional[str] = None, newline: Optional[str] = None, **kwargs: Any,) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1500" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-140" value="+ pipe(self, path: Union[AnyFSPath, dict[AnyFSPath, bytes]], value: Optional[bytes] = None, **kwargs: Any, ) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1522" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-141" value="+ touch(self, path: AnyFSPath, truncate: bool = True, **kwargs: Any) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1544" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-142" value="+ checksum(self, path: AnyFSPath) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1566" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-143" value="+ copy(self, from_info: AnyFSPath, to_info: AnyFSPath) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1588" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-144" value="+ cp_file(self, from_info: AnyFSPath, to_info: AnyFSPath, **kwargs: Any) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1610" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-145" value="+ exists(self, path: AnyFSPath, callback: fsspec.Callback = ..., batch_size: Optional[int] = ...,) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1632" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-146" value="+ exists(self, path: list[AnyFSPath], callback: fsspec.Callback = ..., batch_size: Optional[int] = ...,) -&gt; list[bool]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1654" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-147" value="+ exists(self, path: Union[AnyFSPath, list[AnyFSPath]], callback: fsspec.Callback = DEFAULT_CALLBACK, batch_size: Optional[int] = None, ) -&gt; Union[bool, list[bool]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1676" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-148" value="+ lexists(self, path: AnyFSPath) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1698" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-149" value="+ symlink(self, from_info: AnyFSPath, to_info: AnyFSPath) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1720" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-150" value="+ link(self, from_info: AnyFSPath, to_info: AnyFSPath) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1742" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-151" value="+ reflink(self, from_info: AnyFSPath, to_info: AnyFSPath) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1764" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-152" value="+ islink(self, path: AnyFSPath) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1786" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-153" value="+ is_hardlink(self, path: AnyFSPath) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1808" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-154" value="+ iscopy(self, path: AnyFSPath) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1830" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-155" value="+ ls(self, path: AnyFSPath, detail: Literal[True], **kwargs) -&gt; &quot;Iterator[Entry]&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1852" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-156" value="+ ls(self, path: AnyFSPath, detail: Literal[False], **kwargs) -&gt; Iterator[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1874" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-157" value="+ ls(self, path, detail=False, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1896" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-158" value="+ find(self, path: Union[AnyFSPath, list[AnyFSPath]], prefix: bool = False, batch_size: Optional[int] = None, **kwargs,) -&gt; Iterator[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1918" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-159" value="+ mv(self, from_info: AnyFSPath, to_info: AnyFSPath, **kwargs: Any) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1940" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-160" value="+ rmdir(self, path: AnyFSPath) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1962" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-161" value="+ rm_file(self, path: AnyFSPath) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="1984" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-162" value="+ rm(self, path: Union[AnyFSPath, list[AnyFSPath]], recursive: bool = False, **kwargs,) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2006" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-163" value="+ info(self, path: AnyFSPath, callback: fsspec.Callback = ..., batch_size: Optional[int] = ..., **kwargs,) -&gt; &quot;Entry&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2028" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-164" value="+ info(self, path: list[AnyFSPath], callback: fsspec.Callback = ..., batch_size: Optional[int] = ...,) -&gt; list[&quot;Entry&quot;]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2050" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-165" value="+ info(self, path, callback=DEFAULT_CALLBACK, batch_size=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2072" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-166" value="+ mkdir(self, path: AnyFSPath, create_parents: bool = True, **kwargs: Any) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2094" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-167" value="+ makedirs(self, path: AnyFSPath, **kwargs: Any) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2116" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-168" value="+ put_file(self, from_file: Union[AnyFSPath, &quot;BinaryIO&quot;], to_info: AnyFSPath, callback: fsspec.Callback = DEFAULT_CALLBACK, size: Optional[int] = None, **kwargs,) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2138" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-169" value="+ get_file(self, from_info: AnyFSPath, to_info: AnyFSPath, callback: fsspec.Callback = DEFAULT_CALLBACK, **kwargs,) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2160" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-170" value="+ upload_fobj(self, fobj: IO, to_info: AnyFSPath, **kwargs) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2182" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-171" value="+ walk(self, path: AnyFSPath, **kwargs: Any)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2204" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-172" value="+ glob(self, path: AnyFSPath, **kwargs: Any)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2226" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-173" value="+ size(self, path: AnyFSPath) -&gt; Optional[int]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2248" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-174" value="+ sizes(self, paths: list[AnyFSPath]) -&gt; list[Optional[int]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2270" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-175" value="+ du(self, path: AnyFSPath, total: bool = True, maxdepth: Optional[int] = None, **kwargs: Any,) -&gt; Union[int, dict[AnyFSPath, int]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2292" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-176" value="+ put(self, from_info: Union[AnyFSPath, list[AnyFSPath]], to_info: Union[AnyFSPath, list[AnyFSPath]], callback: fsspec.Callback = DEFAULT_CALLBACK, recursive: bool = False, batch_size: Optional[int] = None,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2314" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-177" value="+ get(self, from_info: Union[AnyFSPath, list[AnyFSPath]], to_info: Union[AnyFSPath, list[AnyFSPath]], callback: fsspec.Callback = DEFAULT_CALLBACK, recursive: bool = False, batch_size: Optional[int] = None,) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2336" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-178" value="+ ukey(self, path: AnyFSPath) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2358" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-179" value="+ created(self, path: AnyFSPath) -&gt; datetime.datetime" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2380" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-180" value="+ modified(self, path: AnyFSPath) -&gt; datetime.datetime" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2402" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-181" value="+ sign(self, path: AnyFSPath, expiration: int = 100, **kwargs: Any) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry y="2424" width="300" height="22" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-58" value="dvc_objects.fs.base.ObjectFileSystem&#xa;# 主要在基类的上禁用了mkdir 操作，重写了 find 操作" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="180" y="1510" width="350" height="115" as="geometry">
@@ -305,6 +566,169 @@
             <mxPoint x="456" y="1510" as="sourcePoint" />
             <mxPoint x="479" y="1448" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-182" value="dvc_objects.fs.local.LocalFileSystem" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="550" y="1740" width="350" height="280" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-183" value="+ sep = os.sep" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="35" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-184" value="+ flavour = os.path" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="55" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-185" value="+ protocol = &quot;local&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="75" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-190" value="+ PARAM_CHECKSUM = &quot;md5&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="95" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-191" value="+ PARAM_PATH = &quot;path&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="115" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-192" value="+ TRAVERSE_PREFIX_LEN = 2" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="135" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-186" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="155" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-187" value="+ __init__(self, fs=None, **kwargs)&#xa;# fs = fs or FsspecLocalFileSystem(**kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="163" width="350" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-188" value="+ getcwd(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="200" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-189" value="+ normpath(self, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="220" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-193" value="+ realpath(self, path: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="240" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-194" value="+ upload_fobj(self, fobj, to_info, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry y="260" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-195" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="lnwAOaTVToFOJ4RAvE19-182" target="lnwAOaTVToFOJ4RAvE19-33">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="833" y="1550" as="sourcePoint" />
+            <mxPoint x="1030" y="1387" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-196" value="FsspecLocalFileSystem(fsspec.AbstractFileSystem)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="110" y="1740" width="350" height="660" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-197" value="+ sep = os.sep" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="30" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-209" value="+ fs = fsspec.filesystem(&quot;file&quot;)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="50" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-203" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="70" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-204" value="+ __init__(self, *args, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="78" width="350" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-205" value="+ makedirs(self, path, exist_ok=False)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="100" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-206" value="+ mkdir(self, path, create_parents=True, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="120" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-207" value="+ lexists(self, path, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="140" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-208" value="+ exists(self, path, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="160" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-210" value="+ checksum(self, path) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="180" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-211" value="+ info(self, path, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="200" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-212" value="+ ls(self, path, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="220" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-213" value="+ isfile(self, path) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="240" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-214" value="+ isdir(self, path) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="260" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-215" value="+ walk(self, path, maxdepth=None, topdown=True, detail=False, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="280" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-216" value="+ find(self, path, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="300" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-217" value="+  _parent(cls, path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="320" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-218" value="+ put_file(self, lpath, rpath, callback=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="340" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-219" value="+ get_file(self, rpath, lpath, callback=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="360" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-220" value="+ mv(self, path1, path2, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="380" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-221" value="+ rmdir(self, path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="400" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-222" value="+ rm_file(self, path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="420" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-223" value="+ rm(self, path, recursive=False, maxdepth=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="440" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-224" value="+ cp_file(self, path1, path2, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="460" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-225" value="+ copy(self, path1, path2, recursive=False, on_error=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="480" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-226" value="+ open(self, path, mode=&quot;r&quot;, encoding=None, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="500" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-227" value="+ symlink(self, path1, path2)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="520" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-228" value="+ islink(self, path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="540" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-229" value="+ is_hardlink(path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="560" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-230" value="+ link(self, path1, path2)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="580" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-231" value="+ reflink(self, path1, path2)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="600" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-232" value="+ created(self, path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="620" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-233" value="+ modified(self, path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-196">
+          <mxGeometry y="640" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-234" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="lnwAOaTVToFOJ4RAvE19-196" target="lnwAOaTVToFOJ4RAvE19-182">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="1710" as="sourcePoint" />
+            <mxPoint x="470" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-235" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;dvc_objects.fs.scheme.Scheme&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="1290" width="210" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-237" value="+ SSH = &quot;ssh&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="26" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-238" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="52" width="210" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
