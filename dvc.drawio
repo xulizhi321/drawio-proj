@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-23T07:14:22.280Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="1GsJq0PIMTWIRUm--C00" version="24.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-23T08:16:04.789Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="ZslXEulJwDnBktxuaKRp" version="24.5.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1646" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1816" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -721,14 +721,215 @@
             <mxPoint x="470" y="1710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lnwAOaTVToFOJ4RAvE19-235" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;dvc_objects.fs.scheme.Scheme&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="250" y="1290" width="210" height="78" as="geometry" />
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-235" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;dvc_objects.fs.scheme.Scheme&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# 这个是系统支持的文件系统类型，即 protocal&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-320" y="1180" width="480" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="lnwAOaTVToFOJ4RAvE19-237" value="+ SSH = &quot;ssh&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
-          <mxGeometry y="26" width="210" height="26" as="geometry" />
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-237" value="+ SSH = &quot;ssh&quot;&amp;nbsp; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_ssh.SSHFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="26" width="480" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="lnwAOaTVToFOJ4RAvE19-238" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
-          <mxGeometry y="52" width="210" height="26" as="geometry" />
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-251" value="+&amp;nbsp;HDFS = &quot;hdfs&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_hdfs.HDFSFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="52" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-252" value="+&amp;nbsp;WEBHDFS = &quot;webhdfs&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_webhdfs.WebHDFSFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="78" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-238" value="+&amp;nbsp;S3 = &quot;s3&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_s3.S3FileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="104" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-253" value="+&amp;nbsp;AZURE = &quot;azure&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_azure.AzureFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="130" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-254" value="+&amp;nbsp;HTTP = &quot;http&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_http.HTTPFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="156" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-255" value="+&amp;nbsp;HTTPS = &quot;https&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_http.HTTPSFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="182" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-256" value="+&amp;nbsp;GS = &quot;gs&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_gdrive.GDriveFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="208" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-257" value="+&amp;nbsp;GDRIVE = &quot;gdrive&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_gdrive.GDriveFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="234" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-258" value="+&amp;nbsp;LOCAL = &quot;local&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_objects.fs.local.LocalFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="260" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-259" value="+&amp;nbsp;OSS = &quot;oss&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_oss.OSSFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="286" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-260" value="+&amp;nbsp;WEBDAV = &quot;webdav&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_webdav.WebDAVFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="312" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-261" value="+&amp;nbsp;WEBDAVS = &quot;webdavs&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_webdav.WebDAVSFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="338" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-262" value="+&amp;nbsp;MEMORY = &quot;memory&quot; #&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dvc_objects.fs.memory.MemoryFileSystem&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-235">
+          <mxGeometry y="364" width="480" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-263" value="dvc_objects.fs" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-180" y="80" width="250" height="180" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-266" value="+ known_implementations" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-263">
+          <mxGeometry y="26" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-267" value="+ _import_class(cls: str)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-263">
+          <mxGeometry y="50" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-268" value="+ Registry(Mapping)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-263">
+          <mxGeometry y="74" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-269" value="+ registry = Registry(known_implementations)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-263">
+          <mxGeometry y="98" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-270" value="+ get_fs_cls(remote_conf, cls=None, scheme=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-263">
+          <mxGeometry y="122" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-271" value="+ as_filesystem(fs: &quot;AbstractFileSystem&quot;, checksum: str = &quot;md5&quot;, object_based: bool = False, **fs_args,) -&gt; &quot;FileSystem&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-263">
+          <mxGeometry y="146" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-264" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-263">
+          <mxGeometry y="170" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-272" value="Object" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-590" y="336" width="250" height="274" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-273" value="+ __slots__ = (&quot;path&quot;, &quot;fs&quot;, &quot;oid&quot;)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="26" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-274" value="+ path" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="50" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-275" value="+ fs" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="74" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-276" value="+ oid" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="98" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-279" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="122" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-278" value="+ __init__(self, path: &quot;AnyFSPath&quot;, fs: &quot;FileSystem&quot;, oid: str,)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="130" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-280" value="+ __len__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="154" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-281" value="+ __str__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="178" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-282" value="+ __bool__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="202" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-283" value="+ __eq__(self, other)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="226" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-284" value="+ __hash__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-272">
+          <mxGeometry y="250" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-285" value="ObjectDB" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-650" y="680" width="250" height="778" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-286" value="+ fs" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="26" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-287" value="+ path" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="50" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-288" value="+ read_only" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="74" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-289" value="+ _dirs: Optional[set]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="98" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-290" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="122" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-292" value="+ __init__(self, fs: &quot;FileSystem&quot;, path: str, read_only: bool = False, **config)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="130" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-291" value="+ __eq__(self, other: object)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="154" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-293" value="+ __hash__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="178" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-294" value="+ __repr__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="202" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-295" value="+ __rich_repr__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="226" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-296" value="+ _init(self, dname: str) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="250" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-297" value="+ exists(self, oid: str) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="274" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-298" value="+ exists_prefix(self, short_oid: str) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="298" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-299" value="+ move(self, from_info, to_info)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="322" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-300" value="+ makedirs(self, path)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="346" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-301" value="+ get(self, oid: str) -&gt; Object" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="370" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-302" value="+ add_bytes(self, oid: str, data: Union[bytes, BinaryIO]) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="394" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-303" value="+ add(self, path: Union[&quot;AnyFSPath&quot;, list[&quot;AnyFSPath&quot;]], fs: &quot;FileSystem&quot;, oid: Union[str, list[str]], hardlink: bool = False, callback: &quot;Callback&quot; = DEFAULT_CALLBACK, check_exists: bool = True, on_error: Optional[Callable[[str, BaseException], None]] = None, **kwargs,) -&gt; int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="418" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-304" value="+ delete(self, oid: str)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="442" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-305" value="+ clear(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="466" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-306" value="+ _oid_parts(self, oid: str) -&gt; tuple[str, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="490" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-307" value="+ oid_to_path(self, oid) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="514" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-308" value="+ _list_prefixes(self, prefixes: Optional[Iterable[str]] = None, jobs: Optional[int] = None,) -&gt; Iterator[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="538" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-309" value="+ path_to_oid(self, path) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="562" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-310" value="+ _list_oids(self, prefixes: Optional[Iterable[str]] = None, jobs: Optional[int] = None,) -&gt; Iterator[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="586" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-311" value="+ _oids_with_limit(self, limit: int, prefixes: Optional[Iterable[str]] = None, jobs: Optional[int] = None,) -&gt; Iterator[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="610" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-312" value="+ _max_estimation_size(self, oids)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="634" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-313" value="+ _estimate_remote_size(self, oids=None, progress=noop)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="658" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-314" value="+ _list_oids_traverse(self, remote_size, remote_oids, jobs=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="682" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-315" value="+ all(self, jobs=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="706" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-316" value="+ list_oids_exists(self, oids: Iterable[str], jobs: Optional[int] = None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="730" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-317" value="+ oids_exist(self, oids, jobs=None, progress=noop)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lnwAOaTVToFOJ4RAvE19-285">
+          <mxGeometry y="754" width="250" height="24" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
