@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" version="24.7.4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4480" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5756" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1473,7 +1473,7 @@
           <mxGeometry y="82" width="440" height="24" as="geometry" />
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-126" value="FileInfo(NamedTuple)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=22;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2280" y="2129" width="250" height="182" as="geometry">
+          <mxGeometry x="-2220" y="1984" width="250" height="182" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1570,7 +1570,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-165" value="DataIndexEntry" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=22;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-3300" y="2500" width="250" height="222" as="geometry">
+          <mxGeometry x="-4770" y="2400" width="250" height="222" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1602,7 +1602,7 @@
           <mxGeometry y="198" width="250" height="24" as="geometry" />
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-176" value="DataIndexTrie(JSONTrie)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=22;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2870" y="2230" width="250" height="246" as="geometry">
+          <mxGeometry x="-4530" y="2050" width="250" height="246" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1638,12 +1638,12 @@
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-190" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rH1_KGLevIb1EDTIsBj_-176" target="rH1_KGLevIb1EDTIsBj_-165">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-2800" y="2630" as="sourcePoint" />
-            <mxPoint x="-2640" y="2630" as="targetPoint" />
+            <mxPoint x="-4270" y="2530" as="sourcePoint" />
+            <mxPoint x="-4110" y="2530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-191" value="Storage(ABC)&#xa;# 有点像拿 DataIndexEntry 来找 Key&#xa;# key 就是对应的对象的存储路径？" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2870" y="2520" width="340" height="250" as="geometry">
+          <mxGeometry x="-4340" y="2420" width="340" height="250" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1675,7 +1675,7 @@
           <mxGeometry y="226" width="340" height="24" as="geometry" />
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-204" value="ObjectStorage(Storage)&#xa;# 这个和 FileStorage 比就是用 odb 成员变量代理了 fs， path 等" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-3130" y="2862" width="380" height="322" as="geometry">
+          <mxGeometry x="-4600" y="2762" width="380" height="322" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1717,12 +1717,12 @@
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-214" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rH1_KGLevIb1EDTIsBj_-204" target="rH1_KGLevIb1EDTIsBj_-191">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-3100" y="2740" as="sourcePoint" />
-            <mxPoint x="-2940" y="2740" as="targetPoint" />
+            <mxPoint x="-4570" y="2640" as="sourcePoint" />
+            <mxPoint x="-4410" y="2640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-218" value="FileStorage(Storage)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=22;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2710" y="2840" width="340" height="366" as="geometry">
+          <mxGeometry x="-4180" y="2740" width="340" height="366" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1773,14 +1773,167 @@
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-231" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rH1_KGLevIb1EDTIsBj_-218" target="rH1_KGLevIb1EDTIsBj_-191">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-2815" y="2820" as="sourcePoint" />
-            <mxPoint x="-2772" y="2760" as="targetPoint" />
+            <mxPoint x="-4285" y="2720" as="sourcePoint" />
+            <mxPoint x="-4242" y="2660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-235" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rH1_KGLevIb1EDTIsBj_-191" target="rH1_KGLevIb1EDTIsBj_-165">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-2860" y="2412" as="sourcePoint" />
-            <mxPoint x="-3010" y="2472" as="targetPoint" />
+            <mxPoint x="-4330" y="2312" as="sourcePoint" />
+            <mxPoint x="-4480" y="2372" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-236" value="StorageInfo" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-4180" y="2140" width="210" height="170" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-237" value="+ data: Optional[Storage] = None&#xa;# 可以在内存" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-236">
+          <mxGeometry y="30" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-238" value="+ cache: Optional[Storage] = None&#xa;# 典型的本地文件存储" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-236">
+          <mxGeometry y="70" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-240" value="+ remote: Optional[Storage] = None&#xa;# 云端存储" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-236">
+          <mxGeometry y="110" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-239" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-236">
+          <mxGeometry y="150" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-247" value="1：3" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rH1_KGLevIb1EDTIsBj_-191" target="rH1_KGLevIb1EDTIsBj_-236">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-3990" y="2390" as="sourcePoint" />
+            <mxPoint x="-3830" y="2390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-248" value="StorageMapping(MutableMapping)&#xa;# 存的是 key 对应的 value 对应的类型是 StorageInfo" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-4190" y="1420" width="440" height="600" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-249" value="+ _map = dict(*args, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="40" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-251" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="64" width="440" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-252" value="+ __init__(self, *args, **kwargs)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="72" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-253" value="+ __repr__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="96" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-254" value="+ __rich_repr__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="120" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-255" value="+ __setitem__(self, key, value)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="144" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-256" value="+ __delitem__(self, key)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="168" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-257" value="+ __getitem__(self, key)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="192" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-258" value="+ __getitem__(self, key) -&gt; StorageInfo" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="216" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-259" value="+ __iter__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="240" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-260" value="+ __len__(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="264" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-261" value="+ add_data(self, storage: &quot;Storage&quot;)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="288" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-262" value="+ add_cache(self, storage: &quot;Storage&quot;)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="312" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-263" value="+ add_remote(self, storage: &quot;Storage&quot;)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="336" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-264" value="+ get_storage_odb(self, entry: &quot;DataIndexEntry&quot;, typ: str) -&gt; &quot;HashFileDB&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="360" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-265" value="+ get_data_odb(self, entry: &quot;DataIndexEntry&quot;) -&gt; &quot;HashFileDB&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="384" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-266" value="+ get_cache_odb(self, entry: &quot;DataIndexEntry&quot;) -&gt; &quot;HashFileDB&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="408" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-267" value="+ get_remote_odb(self, entry: &quot;DataIndexEntry&quot;) -&gt; &quot;HashFileDB&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="432" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-268" value="+ get_storage(self, entry: &quot;DataIndexEntry&quot;, typ: str) -&gt; tuple[&quot;FileSystem&quot;, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="456" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-269" value="+ get_data(self, entry: &quot;DataIndexEntry&quot;) -&gt; tuple[&quot;FileSystem&quot;, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="480" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-270" value="+ get_cache(self, entry: &quot;DataIndexEntry&quot;) -&gt; tuple[&quot;FileSystem&quot;, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="504" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-271" value="+ get_remote(self, entry: &quot;DataIndexEntry&quot;) -&gt; tuple[&quot;FileSystem&quot;, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="528" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-272" value="+ cache_exists(self, entry: &quot;DataIndexEntry&quot;, **kwargs) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="552" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-273" value="+ remote_exists(self, entry: &quot;DataIndexEntry&quot;, **kwargs) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry y="576" width="440" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-274" value="1:*" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rH1_KGLevIb1EDTIsBj_-236" target="rH1_KGLevIb1EDTIsBj_-248">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-3980" y="2110" as="sourcePoint" />
+            <mxPoint x="-3820" y="2110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-275" value="BaseDataIndex(ABC, MutableMapping[DataIndexKey, DataIndexEntry])" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-3640" y="1370" width="510" height="302" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-280" value="+ storage_map: StorageMapping" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="30" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-279" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="54" width="510" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-282" value="+ iteritems(self, prefix: Optional[DataIndexKey] = None, shallow: bool = False,) -&gt; Iterator[tuple[DataIndexKey, DataIndexEntry]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="62" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-283" value="+ traverse(self, node_factory: Callable, **kwargs) -&gt; Any" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="86" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-284" value="+ has_node(self, key: DataIndexKey) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="110" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-285" value="+ delete_node(self, key: DataIndexKey) -&gt; None" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="134" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-286" value="+ longest_prefix(self, key: DataIndexKey) -&gt; tuple[Optional[DataIndexKey], Optional[DataIndexEntry]]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="158" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-287" value="+ _get_meta(self, key, entry)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="182" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-288" value="+ _info_from_entry(self, key, entry)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="206" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-289" value="+ add(self, entry: DataIndexEntry)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="230" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-290" value="+ ls(self, root_key: DataIndexKey, detail=True)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="254" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-291" value="+ info(self, key: DataIndexKey)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry y="278" width="510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rH1_KGLevIb1EDTIsBj_-281" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rH1_KGLevIb1EDTIsBj_-248" target="rH1_KGLevIb1EDTIsBj_-275">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-3640" y="1630" as="sourcePoint" />
+            <mxPoint x="-3480" y="1630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
