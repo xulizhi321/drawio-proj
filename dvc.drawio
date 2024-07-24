@@ -854,42 +854,42 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-321" value="HashInfo" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="670" y="2256" width="310" height="274" as="geometry">
+          <mxGeometry x="650" y="2286" width="310" height="300" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-322" value="+ name: Optional[str] # 如 md5, md5-dos2unix" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
           <mxGeometry y="26" width="310" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="lnwAOaTVToFOJ4RAvE19-323" value="+ value: Optional[str]  # 有点像是文件路径或文件名？" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="50" width="310" height="24" as="geometry" />
+        <mxCell id="lnwAOaTVToFOJ4RAvE19-323" value="+ value: Optional[str]  &#xa;# 有点像是文件路径或文件名？&#xa;# 其实就是 hash， ODB里面的文件都用 hash 命名了" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
+          <mxGeometry y="50" width="310" height="50" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-324" value="+ obj_name: Optional[str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="74" width="310" height="24" as="geometry" />
+          <mxGeometry y="100" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-333" value="+ HASH_DIR_SUFFIX = &quot;.dir&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#f8cecc;strokeColor=#b85450;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="98" width="310" height="24" as="geometry" />
+          <mxGeometry y="124" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-326" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="122" width="310" height="8" as="geometry" />
+          <mxGeometry y="148" width="310" height="8" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-327" value="+ __bool__(self) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="130" width="310" height="24" as="geometry" />
+          <mxGeometry y="156" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-328" value="+ __str__(self) -&gt; str  # return f&quot;{self.name}: {self.value}&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="154" width="310" height="24" as="geometry" />
+          <mxGeometry y="180" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-329" value="+ from_dict(cls, d: dict[str, str]) -&gt; &quot;HashInfo&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="178" width="310" height="24" as="geometry" />
+          <mxGeometry y="204" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-330" value="+ to_dict(self) -&gt; dict[str, str]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="202" width="310" height="24" as="geometry" />
+          <mxGeometry y="228" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-331" value="+ isdir(self) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="226" width="310" height="24" as="geometry" />
+          <mxGeometry y="252" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-332" value="+ as_raw(self) -&gt; &quot;HashInfo&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lnwAOaTVToFOJ4RAvE19-321" vertex="1">
-          <mxGeometry y="250" width="310" height="24" as="geometry" />
+          <mxGeometry y="276" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="lnwAOaTVToFOJ4RAvE19-334" value="HashFile(Object)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="240" y="2090" width="410" height="166" as="geometry">
@@ -1114,7 +1114,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-1" value="Tree(HashFile)&#xa;#  本质上应该不是 HashFile 类，基类的核心成员都被置空弃用&#xa;# 主要依靠 _dict, _trie 两个成员变量" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="220" y="2420" width="410" height="708" as="geometry">
+          <mxGeometry x="190" y="2410" width="410" height="708" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
