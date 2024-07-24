@@ -1675,7 +1675,7 @@
           <mxGeometry y="226" width="340" height="24" as="geometry" />
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-204" value="ObjectStorage(Storage)&#xa;# 这个和 FileStorage 比就是用 odb 成员变量代理了 fs， path 等" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-3140" y="2810" width="380" height="322" as="geometry">
+          <mxGeometry x="-3130" y="2862" width="380" height="322" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1722,7 +1722,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rH1_KGLevIb1EDTIsBj_-218" value="FileStorage(Storage)" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=22;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2710" y="2810" width="340" height="366" as="geometry">
+          <mxGeometry x="-2710" y="2840" width="340" height="366" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
