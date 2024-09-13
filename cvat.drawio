@@ -284,21 +284,54 @@
           <mxGeometry y="346" width="220" height="26" as="geometry" />
         </mxCell>
         <mxCell id="V6HHi-NF8V1mAnubpnP4-54" value="task.TaskAnnotation" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1161" y="-90" width="160" height="216" as="geometry">
+          <mxGeometry x="1161" y="-90" width="329" height="398" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="V6HHi-NF8V1mAnubpnP4-61" value="+ db_task" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+          <mxGeometry y="26" width="329" height="26" as="geometry" />
         </mxCell>
         <mxCell id="V6HHi-NF8V1mAnubpnP4-62" value="+ db_jobs" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+          <mxGeometry y="52" width="329" height="26" as="geometry" />
         </mxCell>
         <mxCell id="V6HHi-NF8V1mAnubpnP4-74" value="+ ir_data" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
+          <mxGeometry y="78" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-85" value="+ data(self)  # return self.ir_data.data" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="104" width="329" height="26" as="geometry" />
         </mxCell>
         <mxCell id="V6HHi-NF8V1mAnubpnP4-60" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
-          <mxGeometry y="104" width="160" height="8" as="geometry" />
+          <mxGeometry y="130" width="329" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-75" value="+ reset(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="138" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-76" value="+ _patch_data(self, data, action)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="164" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-77" value="+ _merge_data(self, data, start_frame, overlap, dimension)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="190" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-78" value="+ put(self, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="216" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-79" value="+ create(self, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="242" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-80" value="+ update(self, data)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="268" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-81" value="+ delete(self, data=None)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="294" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-82" value="+ init_from_db(self)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="320" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-83" value="+ export(self, dst_file, exporter, host=&#39;&#39;, **options)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="346" width="329" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-84" value="+ import_annotations(self, src_file, importer, **options)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
+          <mxGeometry y="372" width="329" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
