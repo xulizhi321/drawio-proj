@@ -333,6 +333,9 @@
         <mxCell id="V6HHi-NF8V1mAnubpnP4-84" value="+ import_annotations(self, src_file, importer, **options)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="V6HHi-NF8V1mAnubpnP4-54">
           <mxGeometry y="372" width="329" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="V6HHi-NF8V1mAnubpnP4-87" value="cvat/apps/dataset_manager/annotation.py:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;主要是用来做shape、track、tag等数据对象之间的转换和merge操作&lt;div&gt;cvat/apps/dataset_manager/bindings.py 主要是做数据到导出json的映射&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;cvat/apps/dataset_manager/project.py 主要是project和数据库间的CRUD等&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;cvat/apps/dataset_manager/serializers.py 主要是 Format 的序列化形式&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;cvat/apps/dataset_manager/task.py 主要是 task、job 和数据库之间的 CRUD 等&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;cvat/apps/dataset_manager/views.py 主要是 project、task、job 等对象的 export 操作&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="-402" width="640" height="170" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
